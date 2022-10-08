@@ -1,3 +1,12 @@
+/*
+TODO: 
+1. Update the API for the location.
+2. Maybe fork and see if there is a way to just use one API rather than 2 with the same accuracy. 
+3. Check code to see if there is a cleaner way to write this. 
+
+*/
+
+
 let units = 'imperial'; //initailize the unit of measurement for open weather map API
 let uOfm = 'F'; //set the unit of measurment for the page 
 //
