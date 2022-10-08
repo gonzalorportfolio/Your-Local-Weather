@@ -11,8 +11,8 @@ function getWeatherAndLocation(unit, fandc) {
         const latitude = position.coords.latitude; // constant for the latitude  coordinates 
         const longitude = position.coords.longitude; //constant for the longitude coordinates 
         console.log('long:' + longitude + ' lat:' + latitude); // check the console to make sure it worked
-        units = unit;
-        //get the users locations and sets it on the page
+        units = unit;//sets the unit of mesurment based on the default parameter or the one set by the user. "imperial" is the default when the .
+        //get the users most accurate location to use in the fectch for the weather data
         fetch('https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}X&localityLanguage=en')
             .then(res => res.json())
             .then(data => {
